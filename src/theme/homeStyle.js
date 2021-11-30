@@ -24,6 +24,18 @@ const homeStyle = makeStyles((theme) => ({
     marginBottom: "50px",
   },
 
+  navBar: {
+    // display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "100%",
+    height: "35px",
+    position: "fixed",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    zIndex: 2000,
+  },
 }));
 
 export default homeStyle;

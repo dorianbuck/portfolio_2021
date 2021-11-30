@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import "@fontsource/roboto/700.css";
+import React from "react";
+// import "@fontsource/roboto/700.css";
 import { Typography, Button, Box } from "@mui/material";
 import homeStyle from "../../theme/homeStyle";
+import Header from "./Header";
 
 const Home = () => {
   const classes = homeStyle();
   return (
+    <>
     <Box className={classes.headerName}>
       <Typography
         variant="h5"
@@ -28,7 +30,9 @@ const Home = () => {
       <Button variant="outlined" data-cy="welcome-btn" className="btn">
         View my work
       </Button>
-    </Box>
+      </Box>
+      <Header />
+      </>
   );
 };
 
