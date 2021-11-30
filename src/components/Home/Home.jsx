@@ -1,24 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "@fontsource/roboto/700.css";
-import Typography from "@mui/material/Typography";
+import { Typography, Button, Box } from "@mui/material";
 import homeStyle from "../../theme/homeStyle";
-
 
 const Home = () => {
   const classes = homeStyle();
   return (
-    <div className={classes.headerName}>
+    <Box className={classes.headerName}>
       <Typography
-        variant="h4"
+        variant="h5"
         component="div"
         gutterBottom
         data-cy="header-1"
         className="headerName"
       >
-        Hello, I'm <span className={classes.highLight}>Dorian Buck</span>. 
+        Aloha, I'm <span className={classes.highLight}>Dorian Buck</span>.
       </Typography>
       <Typography
-        variant="h4"
+        variant="h5"
         component="div"
         gutterBottom
         data-cy="header-2"
@@ -26,7 +25,10 @@ const Home = () => {
       >
         I'm a full-stack web developer.
       </Typography>
-    </div>
+      <Button variant="outlined" data-cy="welcome-btn" className="btn">
+        View my work
+      </Button>
+    </Box>
   );
 };
 

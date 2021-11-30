@@ -15,6 +15,15 @@ const homeStyle = makeStyles((theme) => ({
   highLight: {
     color: "gold",
   },
+
+  btn: {
+    marginLeft: "100px",
+    display: "flex",
+    alignContent: "center",
+    height: "50px",
+    marginBottom: "50px",
+  },
+
 }));
 
 export default homeStyle;
